@@ -1,0 +1,52 @@
+body {
+    background :  linear-gradient(45deg, #00a31b, #fc4a1a, #f9d608, #00a31b, #fc4a1a, #f9d608);
+    color: #f1eff4;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Ranchers', cursive;
+}
+
+h1 {
+    font-size: 5vw;
+    letter-spacing: 1vw;
+    margin-bottom: -1vw;
+}
+
+li {
+    text-align: left;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 95vw;
+    grid-gap: 10vw;
+}
+
+.grid1, .grid2, .grid3, .grid4 {
+    border-radius: 25px;
+    background : linear-gradient(45deg, #f9d608, #fc4a1a,  #00a31b);
+}
+
+.grid3container {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-gap: 5vw;
+
+}
+
+.grid1container {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-gap: 5vw;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid11 {
+    transform: scaleX(-1);
+}0
