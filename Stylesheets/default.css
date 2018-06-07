@@ -3,7 +3,7 @@ body {
     color: white;
     text-align: center;
     font-family: 'VT323', monospace;
-    font-size: 150%;
+    font-size: 2vw;
     margin: 0 auto;
 }
 
@@ -23,25 +23,44 @@ li {
 
 .gridcontainer {
     display: grid;
-    grid-template-columns: 10vw 60vw;
-    grid-template-rows: 10vw auto auto auto auto;
+    grid-template-columns: 10vw 70vw;
+    grid-template-rows: 10vh auto auto auto auto;
     grid-gap: 5vw;
-
 }
 
 .directoryContainer {
     display: grid;
     position: fixed;
-    grid-gap: 5vw;
+    margin: 0 auto;
     height: 100vh;
     width: 10vw;
 }
 
-.directoryContainer img {
+.directoryContainer a {
+    color: #b82601;
+    text-decoration: none;
+}
+
+.wikilink a {
+    color: #b82601;
+    background: white;
+    text-decoration: none;
+    transition: background .5s, color .5s;
+}
+
+.wikilink a:hover {
+    background: #b82601;
+    color: white;
 }
 
 .directoryItem {
     background : white;
+    transition: background .5s, color .5s;
+}
+
+.directoryItem:hover {
+    background: #b82601;
+    color: white;
 }
 
 #grid1, #grid3 {
@@ -63,8 +82,46 @@ li {
 #grid3 {
     grid-area: 4/2/4/2;
 }
+
 #grid4 {
     grid-area: 5/2/5/2;
+}
+#grid4container {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 4fr;
+    grid-template-areas: 
+    "a a b b"
+    ". c d .";
+}
+
+#grid41 {
+    grid-area: a;
+}
+
+#grid42 {
+    grid-area: b;
+}
+
+#grid43 {
+    width: 5vw;
+    margin: 0 auto;
+    grid-area: c;
+}
+
+#grid44 {
+    margin: 0 auto;
+    width: 5vw;
+    grid-area: d;
+}
+
+#grid4 img {
+    background: white;
+    transition: background .5s;
+}
+
+
+#grid4 img:hover {
+    background: #b82601;
 }
 
 .grid3container {
