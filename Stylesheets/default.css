@@ -1,11 +1,14 @@
 body {
-    background :  linear-gradient(45deg, #00a31b, #fc4a1a, #f9d608, #00a31b, #fc4a1a, #f9d608);
-    color: #f1eff4;
+    background :  #000;
+    color: white;
     text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 150%;
+    margin: 0 auto;
 }
 
 h1, h2, h3 {
-    font-family: 'Ranchers', cursive;
+    font-family: 'VT323', monospace;
 }
 
 h1 {
@@ -20,26 +23,59 @@ li {
 
 .gridcontainer {
     display: grid;
-    grid-template-columns: 95vw;
-    grid-gap: 10vw;
+    grid-template-columns: 10vw 60vw;
+    grid-template-rows: 10vw auto auto auto auto;
+    grid-gap: 5vw;
+
 }
 
-.grid1, .grid2, .grid3, .grid4 {
-    border-radius: 25px;
-    background : linear-gradient(45deg, #f9d608, #fc4a1a,  #00a31b);
+.directoryContainer {
+    display: grid;
+    position: fixed;
+    grid-gap: 5vw;
+    height: 100vh;
+    width: 10vw;
+}
+
+.directoryContainer img {
+}
+
+.directoryItem {
+    background : white;
+}
+
+#grid1, #grid3 {
+    background : #b82601;
+}
+
+#top {
+    grid-area: 1/2/1/2;
+}
+
+#grid1 {
+    grid-area: 2/2/2/2;
+}
+
+#grid2 {
+    grid-area: 3/2/3/2;
+}
+
+#grid3 {
+    grid-area: 4/2/4/2;
+}
+#grid4 {
+    grid-area: 5/2/5/2;
 }
 
 .grid3container {
     display: grid;
-    grid-template-columns: 40vw 40vw;
-    grid-gap: 5vw;
-
+    grid-template-columns: auto auto;
+    grid-gap: 1vw;
 }
 
 .grid1container {
     display: grid;
-    grid-template-columns: 40vw 40vw;
-    grid-gap: 5vw;
+    grid-template-columns: auto auto;
 }
 
 img {
@@ -49,4 +85,4 @@ img {
 
 .grid11 {
     transform: scaleX(-1);
-}0
+}

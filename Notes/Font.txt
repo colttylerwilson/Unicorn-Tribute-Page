@@ -1,2 +1,6 @@
 <link href="https://fonts.googleapis.com/css?family=Ranchers" rel="stylesheet">
 font-family: 'Ranchers', cursive;
+
+
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+font-family: 'VT323', monospace;
